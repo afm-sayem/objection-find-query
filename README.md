@@ -1,12 +1,11 @@
 ## objection-find-query
 
-Construct complex api query for endpoints using objection-find.
+Construct complex api query on the frontend, for endpoints implementing [objection-find](https://github.com/Vincit/objection-find).
 
 
 Usage:
 
-```
-const paramUtility = require('objection-find-query');
+```javascript
 
 /*
   expected format:
@@ -37,14 +36,14 @@ const paramUtility = require('objection-find-query');
   {
     'released:gt': 1953,
     'gross_income:gt': 200000,
+    'actors.age:gt': 23,
     'released:lt': 1984,
     'ratings:in': [3, 4]
   }
 */
 
-  const params = getParams();
-  const formattedParams = paramUtility.format(params);
+const ofq = require('objection-find-query');
+const formattedParams = ofq.format(params);
 
 ```
 
-Use a library like `query-string` to stitch together 

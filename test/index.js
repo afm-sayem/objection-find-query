@@ -28,4 +28,3 @@ test('nested', t => {
   t.deepEqual(expected.nested, result);
 });
 
-
