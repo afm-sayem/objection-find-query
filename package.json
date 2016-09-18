@@ -1,0 +1,31 @@
+{
+  "name": "objection-find-query",
+  "version": "0.1.0",
+  "description": "query paramter constructor for objection-find",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afm-sayem/objection-find-query.git"
+  },
+  "keywords": [
+    "objection",
+    "objection.js",
+    "objection-find"
+  ],
+  "author": "AFM Sayem <afm.sayem@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afm-sayem/objection-find-query/issues"
+  },
+  "homepage": "https://github.com/afm-sayem/objection-find-query#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "xo": "^0.16.0"
+  }
+}

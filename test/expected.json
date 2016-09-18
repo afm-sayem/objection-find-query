@@ -1,0 +1,20 @@
+{
+  "simple": {
+    "name:eq": "hello"
+  },
+  "composite": {
+    "created_at:lt": "2016-09-18T03:38:54.366Z",
+    "rating:gt": 5
+  },
+  "multiple_sibling": {
+    "created_at:gt": "2016-09-18T03:38:54.366Z",
+    "rating:gt": 2,
+    "rating:lt": 5
+  },
+  "array": {
+    "director_id:in": [23, 32, 3]
+  },
+  "nested": {
+    "movie.director.name:eq": "Christopher Nolan"
+  }
+}

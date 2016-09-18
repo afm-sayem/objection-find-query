@@ -1,0 +1,38 @@
+{
+  "simple": {
+    "eq": {
+      "name": "hello"
+    }
+  },
+  "composite": {
+    "lt": {
+      "created_at": "2016-09-18T03:38:54.366Z"
+    },
+    "gt": {
+      "rating": 5
+    }
+  },
+  "multiple_sibling": {
+    "gt": {
+      "created_at": "2016-09-18T03:38:54.366Z",
+      "rating": 2
+    },
+    "lt": {
+      "rating": 5
+    }
+  },
+  "array": {
+    "in": {
+      "director_id": [23, 32, 3]
+    }
+  },
+  "nested": {
+    "eq": {
+      "movie": {
+        "director": {
+          "name": "Christopher Nolan"
+        }
+      }
+    }
+  }
+}
