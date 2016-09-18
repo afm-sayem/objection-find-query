@@ -1,5 +1,7 @@
 ## objection-find-query
 
+[![Build Status](https://travis-ci.org/afm-sayem/objection-find-query.svg?branch=master)](https://travis-ci.org/afm-sayem/objection-find-query)
+
 Construct complex api query on the frontend, for endpoints implementing [objection-find](https://github.com/Vincit/objection-find).
 
 
