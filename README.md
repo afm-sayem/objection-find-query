@@ -47,3 +47,6 @@ const formattedParams = ofq.format(params);
 
 ```
 
+## Installation
+
+`npm install objection-find-query`
