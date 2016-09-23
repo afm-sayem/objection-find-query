@@ -1,22 +1,22 @@
 'use strict';
 
-exports.format = function (paramValues) {
+exports.format = function (paramValues, prefix) {
   var params = compact(paramValues);
   var paramObj = {};
   for (var op in params) {
     if ({}.hasOwnProperty.call(params, op)) {
-      Object.assign(paramObj, getFilters(flatten(params[op]), op));
+      Object.assign(paramObj, getFilters(flatten(params[op]), op, prefix));
     }
   }
   return paramObj;
 };
 
-function getFilters(data, op) {
+function getFilters(data, op, prefix) {
   var filterObj = {};
 
   for (var key in data) {
     if ({}.hasOwnProperty.call(data, key)) {
-      filterObj[key + ':' + op] = data[key];
+      filterObj[prefix + '[' + key + ':' + op + ']'] = data[key];
     }
   }
 
